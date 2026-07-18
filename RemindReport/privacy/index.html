@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RemindReport 隐私政策与 Privacy Policy">
+  <title>RemindReport 隐私政策 · Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f6fb;
+      --surface: #fcfcfe;
+      --text: #202531;
+      --muted: #667085;
+      --line: #dfe3ec;
+      --brand: #2563eb;
+      --brand-soft: #e8efff;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(24, 39, 75, .08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141821;
+        --surface: #1d2330;
+        --text: #e8ecf4;
+        --muted: #aab3c4;
+        --line: #343c4d;
+        --brand: #79a5ff;
+        --brand-soft: #23365f;
+        --shadow: 0 10px 30px rgba(0, 0, 0, .22);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+    }
+    main { width: min(760px, calc(100% - 32px)); margin: 48px auto 72px; }
+    header, article {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    header { padding: 32px; margin-bottom: 16px; }
+    article { padding: 20px 32px 32px; }
+    .eyebrow { margin: 0 0 8px; color: var(--brand); font-size: 14px; font-weight: 600; letter-spacing: .04em; }
+    h1 { margin: 0; font-size: clamp(28px, 5vw, 40px); line-height: 1.2; letter-spacing: -.02em; }
+    h2 { margin: 28px 0 8px; font-size: 20px; line-height: 1.3; }
+    p, ul { margin: 8px 0; }
+    ul { padding-left: 22px; }
+    .summary { margin-top: 20px; padding: 16px; border-radius: 12px; background: var(--brand-soft); }
+    .muted, .en { color: var(--muted); }
+    .en { margin-top: 4px; }
+    a { color: var(--brand); text-underline-offset: 3px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 20px; font-size: 14px; }
+    footer { padding: 24px 8px 0; color: var(--muted); font-size: 14px; text-align: center; }
+    @media (max-width: 560px) { main { margin-top: 20px; } header, article { padding-left: 20px; padding-right: 20px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">REMINDREPORT</p>
+    <h1>隐私政策 · Privacy Policy</h1>
+    <p class="muted">更新日期 · Last updated: 2026-07-18</p>
+    <div class="summary">
+      <strong>简要说明：</strong>RemindReport 不要求账号，也不运行开发者服务器。报告和设置保存在您的 Mac 上；只有您主动启用 AI 时，确认范围内的内容才会直接发送给您选择的 AI 服务商。
+      <p class="en"><strong>In short:</strong> RemindReport requires no account and operates no developer server. Reports and settings stay on your Mac. Only when you choose to use AI is the confirmed content sent directly to your selected AI provider.</p>
+    </div>
+    <nav><a href="../support/">技术支持 · Support</a><a href="mailto:w675207752@163.com">联系我们 · Contact</a></nav>
+  </header>
+
+  <article>
+    <h2>1. 开发者不收集数据 · No developer data collection</h2>
+    <p>RemindReport 不包含广告、分析、跟踪或遥测 SDK。开发者不会接收、出售或共享您的提醒事项、报告、API 密钥或使用记录。</p>
+    <p class="en">RemindReport contains no advertising, analytics, tracking, or telemetry SDKs. The developer does not receive, sell, or share your reminders, reports, API keys, or usage history.</p>
+
+    <h2>2. 本地数据 · Data stored on your Mac</h2>
+    <p>报告、模板、来源选择、历史记录和定时提醒设置存储在您的 Mac 本地。AI 服务密钥仅存入 macOS 钥匙串。您可以在 App 内删除本地报告、模板和密钥。</p>
+    <p class="en">Reports, templates, source selections, history, and scheduled-reminder settings are stored locally on your Mac. AI service keys are stored only in macOS Keychain. You can delete local reports, templates, and keys from within the App.</p>
+
+    <h2>3. Apple Reminders 权限 · Apple Reminders access</h2>
+    <p>在您授权并选择列表后，App 通过 Apple EventKit 读取相关提醒事项，用于在本地生成报告。虽然 macOS 将系统权限显示为“完全访问”，RemindReport 的产品逻辑不会创建、修改、完成或删除提醒事项。您可随时在“系统设置 → 隐私与安全性 → 提醒事项”中撤销权限。</p>
+    <p class="en">After you grant permission and select lists, the App reads relevant reminders through Apple EventKit to create reports locally. Although macOS labels the permission “Full Access,” RemindReport does not create, edit, complete, or delete reminders. You can revoke access at any time in System Settings → Privacy &amp; Security → Reminders.</p>
+
+    <h2>4. 可选 AI 功能 · Optional AI features</h2>
+    <p>AI 功能默认不发送数据。每次请求前，App 会显示服务商、端点、模型、字符数和数据范围，并等待您的确认。确认后，所选报告内容和验证请求所需的 API 密钥会从您的 Mac 直接发送到您配置的 OpenAI 兼容服务、Anthropic 或本地 Ollama；不会经过开发者服务器。服务商将按其自身隐私政策处理请求。</p>
+    <p class="en">AI features send nothing by default. Before each request, the App shows the provider, endpoint, model, character count, and data scope and waits for your confirmation. The selected report content and API key needed to authenticate the request are then sent directly from your Mac to your configured OpenAI-compatible service, Anthropic, or local Ollama—not through a developer server. Your provider handles the request under its own privacy policy.</p>
+
+    <h2>5. Apple 服务 · Apple services</h2>
+    <p>购买、恢复购买和收据验证由 Apple StoreKit 处理。Apple 可能按照其隐私政策处理 Apple ID、付款与商店诊断信息；RemindReport 不接收您的完整付款信息。macOS 也会在设备上处理本地通知。</p>
+    <p class="en">Purchases, purchase restoration, and receipt validation are handled by Apple StoreKit. Apple may process Apple ID, payment, and store diagnostic information under its privacy policy; RemindReport does not receive your complete payment details. macOS also handles local notifications on-device.</p>
+
+    <h2>6. 导出与用户选择 · Exports and user choices</h2>
+    <p>只有在您选择导出位置后，App 才会写入 Markdown、CSV 或 PDF 文件。导出的文件由您控制；默认不会包含 Reminders 内部标识符。</p>
+    <p class="en">The App writes Markdown, CSV, or PDF files only after you choose an export location. You control exported files, and Reminders internal identifiers are excluded by default.</p>
+
+    <h2>7. 儿童与政策更新 · Children and policy changes</h2>
+    <p>App 不面向儿童收集数据，也不会有意收集儿童个人信息。本政策如有实质变更，将在此页面更新日期和内容。</p>
+    <p class="en">The App is not designed to collect data from children and does not knowingly collect children’s personal information. Material changes to this policy will be posted here with a revised date.</p>
+
+    <h2>8. 联系我们 · Contact</h2>
+    <p>如有隐私问题，请发送邮件至 <a href="mailto:w675207752@163.com">w675207752@163.com</a>。</p>
+    <p class="en">For privacy questions, email <a href="mailto:w675207752@163.com">w675207752@163.com</a>.</p>
+  </article>
+  <footer>© 2026 RemindReport</footer>
+</main>
+</body>
+</html>
