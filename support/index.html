@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6766388831">
-    <title>技术支持 - CutMaster Pro Edge</title>
+    <title>CutMaster Pro Edge｜板材開料排版與鋸切步驟</title>
+    <meta name="description" content="Offline sheet cutting plans for cabinet and woodworking projects. Import a list of parts, check the cut sequence and take a PDF to the workshop. Available on iPhone, iPad and Mac.">
+    <link rel="canonical" href="https://wkian8428-star.github.io/support/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CutMaster Pro Edge — Sheet cutting plans for woodworking">
+    <meta property="og:description" content="From a parts list to a cut layout, numbered saw cuts and a workshop PDF. Works offline on iPhone, iPad and Mac.">
+    <meta property="og:url" content="https://wkian8428-star.github.io/support/">
+    <meta property="og:image" content="https://wkian8428-star.github.io/support/cutmaster/en-layout.webp">
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.8; color: #333; }
         h1 { font-size: 2em; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         h2 { font-size: 1.4em; margin-top: 30px; }
         p { margin: 12px 0; }
-        .en { color: #888; font-size: 0.9em; }
         a { color: #007AFF; }
         .store-link {
             display: inline-block;
@@ -23,38 +29,83 @@
         }
         .store-link:hover { background: #064688; }
         .store-link:focus-visible { outline: 3px solid #0759b6; outline-offset: 3px; }
+        .intro { font-size: 1.1em; max-width: 64ch; }
+        .languages { display: flex; flex-wrap: wrap; gap: 16px; }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+        .gallery figure { margin: 0; min-width: 0; }
+        .gallery img { display: block; width: 100%; height: auto; border-radius: 12px; }
+        .gallery figcaption { margin-top: 8px; font-size: 0.94em; }
+        .support { border-top: 1px solid #ddd; margin-top: 38px; padding-top: 6px; }
+        @media (max-width: 540px) {
+            body { margin: 22px auto; }
+            .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+            .gallery figcaption { line-height: 1.4; }
+        }
     </style>
 </head>
 <body>
-    <h1>CutMaster Pro Edge 技术支持</h1>
+    <h1>切割大師 Pro Edge <span lang="en">· CutMaster Pro Edge</span></h1>
+    <nav class="languages" aria-label="頁面導覽">
+        <a href="#woodworking">繁體中文</a>
+        <a href="#english" lang="en">English</a>
+        <a href="#support">技術支援 <span lang="en">/ Support</span></a>
+    </nav>
     <p>
         <a class="store-link" href="https://apps.apple.com/app/apple-store/id6766388831?pt=128768009&amp;ct=edge20-support&amp;mt=8">
-            在 App Store 查看 <span lang="en">· View on the App Store</span>
+            在 App Store 檢視 <span lang="en">· View on the App Store</span>
         </a>
     </p>
-    <p class="updated">最后更新：2026年5月5日</p>
+    <section id="woodworking" lang="zh-Hant" aria-labelledby="zh-workshop-heading">
+        <h2 id="zh-workshop-heading">為木工與櫥櫃規劃板材開料</h2>
+        <p class="intro">貼上零件清單或匯入 CSV，設定鋸縫與木紋方向。確認每張板的零件配置後，逐刀看鋸切順序，將圖紙匯出為 PDF 帶到工作現場。可用餘料也能留下，供下一個專案使用。</p>
+        <p>適用於 iPhone、iPad 和 Mac。一次性付費，排版和專案儲存在裝置上，無需登入即可離線使用。</p>
+        <div class="gallery">
+            <figure>
+                <img src="cutmaster/zh-layout.webp" width="640" height="1391" alt="櫥櫃範例的板材排版圖，標示零件在板上的位置" decoding="async">
+                <figcaption>確認板材配置</figcaption>
+            </figure>
+            <figure>
+                <img src="cutmaster/zh-cut-sequence.webp" width="640" height="1391" alt="依序編號的鋸切步驟和尺寸" decoding="async">
+                <figcaption>核對鋸切順序</figcaption>
+            </figure>
+            <figure>
+                <img src="cutmaster/zh-pdf.webp" width="640" height="1391" alt="含開料圖和零件清單的 PDF 預覽" decoding="async">
+                <figcaption>將 PDF 帶到工作現場</figcaption>
+            </figure>
+        </div>
+    </section>
 
-    <h2>联系我们</h2>
-    <p>如果您在使用 CutMaster Pro Edge 过程中遇到任何问题，欢迎通过以下方式联系我们：</p>
-    <ul>
-        <li>电子邮件：<a href="mailto:w675207752@163.com">w675207752@163.com</a></li>
-    </ul>
+    <section id="english" lang="en" aria-labelledby="en-workshop-heading">
+        <h2 id="en-workshop-heading">Sheet cutting plans for woodworking</h2>
+        <p class="intro">Paste a parts list or import a CSV. Set the blade kerf and grain direction, check the layout on each sheet, then follow the numbered cut sequence. Export a PDF for the workshop and keep track of offcuts you can use on the next project.</p>
+        <p>One-time purchase for iPhone, iPad and Mac. Projects and cutting calculations stay on the device, so you can work offline without an account.</p>
+        <div class="gallery">
+            <figure>
+                <img src="cutmaster/en-layout.webp" width="640" height="1391" alt="Sheet layout showing where each of the example cabinet parts goes" loading="lazy" decoding="async">
+                <figcaption>Check the sheet layout</figcaption>
+            </figure>
+            <figure>
+                <img src="cutmaster/en-cut-sequence.webp" width="640" height="1391" alt="Step-by-step saw cuts with dimensions" loading="lazy" decoding="async">
+                <figcaption>Follow each cut in order</figcaption>
+            </figure>
+            <figure>
+                <img src="cutmaster/en-pdf.webp" width="640" height="1391" alt="PDF preview with a cutting diagram and parts list" loading="lazy" decoding="async">
+                <figcaption>Take a PDF to the shop</figcaption>
+            </figure>
+        </div>
+        <p><a class="store-link" href="https://apps.apple.com/app/apple-store/id6766388831?pt=128768009&amp;ct=edge20-support&amp;mt=8">View on the App Store</a></p>
+    </section>
 
-    <h2>常见问题</h2>
-    <h3>数据存储</h3>
-    <p>本应用所有数据均存储在设备本地，不会上传到任何服务器。如需备份数据，可使用 iCloud 备份功能。</p>
+    <section id="support" class="support" aria-labelledby="support-heading">
+        <h2 id="support-heading">技術支援 <span lang="en">/ Support</span></h2>
+        <p>如有使用問題或意見，請寄信至 <a href="mailto:w675207752@163.com">w675207752@163.com</a>。</p>
+        <p lang="en">For help or feedback, email <a href="mailto:w675207752@163.com">w675207752@163.com</a>.</p>
 
-    <h3>App 内购买</h3>
-    <p>本应用为一次性付费购买，无需订阅或额外内购。</p>
+        <h3>資料備份 <span lang="en">/ Backing up your work</span></h3>
+        <p>2.0.1 的專案資料儲存在本機。你可在 App 匯出專案或完整工作區備份，並將檔案儲存至你選擇的位置。</p>
+        <p lang="en">In 2.0.1, project data is saved locally. Export an individual project or a library backup and save the file to a location you choose.</p>
 
-    <h3>反馈建议</h3>
-    <p>我们非常欢迎您通过邮件 <a href="mailto:w675207752@163.com">w675207752@163.com</a> 提供反馈和建议，以帮助我们改进产品。</p>
-
-    <hr>
-    <p class="en"><strong>Tech Support</strong></p>
-    <p class="en">If you encounter any issues while using CutMaster Pro Edge, please contact us via email: <a href="mailto:w675207752@163.com">w675207752@163.com</a></p>
-    <p class="en">All app data is stored locally on your device. No data is uploaded to any server. For data backup, please use the iCloud backup feature.</p>
-    <p class="en">This app is a one-time purchase with no subscription or additional in-app purchases.</p>
-    <p class="en">We welcome your feedback and suggestions via email to help us improve the product.</p>
+        <p><a href="../privacy/">隱私權政策 <span lang="en">/ Privacy policy</span></a></p>
+    </section>
 </body>
 </html>
